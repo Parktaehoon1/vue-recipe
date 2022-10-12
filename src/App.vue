@@ -153,6 +153,11 @@ export default {
       let searchBtn = document.getElementById("search-btn");
       console.log("버튼", searchBtn);
       searchBtn.addEventListener("click", getFoodByKeyword);
+      // searchBtn.addEventListener("keyup", function (event) {
+      //   if (event.keyCode === 13) {
+      //     getFoodByKeyword(event);
+      //   }
+      // });
 
       let appearBtn = document.querySelector(".appear-btn");
       console.log("appearbtn", appearBtn);
@@ -239,6 +244,10 @@ body {
 .show-btn {
   transition: all 0.3s;
   opacity: 0;
+  width: 200px;
+}
+#search-input {
+  margin-right: 10px;
 }
 #search-btn {
   border: 0;
@@ -246,6 +255,7 @@ body {
 }
 #search-btn > i {
   font-size: 16px;
+  cursor: pointer;
 }
 
 .header > h1 {
