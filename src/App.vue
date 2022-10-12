@@ -1,4 +1,5 @@
 <template>
+  <ModalView />
   <div class="wrap">
     <header class="header">
       <div class="search-box">
@@ -27,7 +28,11 @@
 
 <script>
 import { onMounted } from "vue";
+import ModalView from "@/components/ModalView.vue";
 export default {
+  components: {
+    ModalView,
+  },
   setup() {
     onMounted(() => {
       let menus = document.querySelectorAll(".menu-list button");
